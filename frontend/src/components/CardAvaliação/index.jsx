@@ -6,13 +6,13 @@ export default function CardAvaliacao({ NomeCliente, Avaliacão }) {
 
             <div className="flex w-full flex-col">
                 <div className="flex items-center gap-2">
-                    <h1 className="font-medium  text-2xl">{NomeCliente}</h1>
+                    <h1 className="font-medium  text-2xl">{NomeCliente ? NomeCliente : 'Não Identificado'}</h1>
                     <h1 className="text-2xl text-blue-700"><BiSolidLike /></h1>
                 </div>
 
                 <h3 className="font-medium text-blue-700">Acabou de Comprar</h3>
 
-                <h4 className="font-medium">{Avaliacão}</h4>
+                <h4 className="font-medium">{Avaliacão ? Avaliacão : 'Nada a compartilhar'}</h4>
             </div >
         </div>
     )

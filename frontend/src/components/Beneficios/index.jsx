@@ -15,7 +15,7 @@ export default function Servicos() {
 
                 <div className='grid gap-3 grid-cols-5 content-center text-center self-center w-[100%]'>
 
-                    <CardBeneficios ImagemCard={Dinheiro} TextoCard={'Parcele em Até 12'} />
+                    <CardBeneficios ImagemCard={Dinheiro} TextoCard={'Parcele em Até 12X'} />
 
                     <CardBeneficios ImagemCard={Brasil} TextoCard={'Envio para Todo o Brasil'} />
 

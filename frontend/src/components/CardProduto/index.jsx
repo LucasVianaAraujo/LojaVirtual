@@ -3,7 +3,7 @@ import { FaShoppingCart } from "react-icons/fa";
 export default function CardProduto({ NomeProduto, CategoriaProduto, PreçoProduto }) {
     return (
         <div className="flex-[100%] h-auto">
-            <div className="flex flex-col shadow-2xl shadow-black/40 rounded-md p-3 min-w-[20%] h-[30vh]">
+            <div className="flex flex-col shadow-2xl shadow-black/40 rounded-md p-3 min-w-[20%] max-w-[100%] h-[30vh]">
                 <div className="flex bg-gray-400 w-full h-[15vh] rounded-md" />
                 <div className="pt-2 h-30">
                     <h3 className="font-medium">{NomeProduto ? NomeProduto : 'Não Intitulado'}</h3>

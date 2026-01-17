@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import DoisRockeiros from '../../assets/images/DoisRoqueiros.png'
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
@@ -24,7 +25,7 @@ export default function Home() {
                             <h3 className="flex text-blue-600 font-bold text-6xl">ROCKSTAR EM VOCÊ!</h3>
                             <h4 className="flex self-center text-black font-semibold text-2xl">Descubra instrumentos de qualidade excepcional para todos os níveis.</h4>
                             <div className="flex w-100% gap-2 pt-5">
-                                <button className="bg-blue-600 hover:bg-blue-500 transition-all text-white font-bold justify-center w-50 items-center h-12 shadow-2xl shadow-black/40 rounded-sm cursor-pointer">EXPLORAR</button>
+                                <Link to={'/Produtos'}><button className="bg-blue-600 hover:bg-blue-500 transition-all text-white font-bold justify-center w-50 items-center h-12 shadow-2xl shadow-black/40 rounded-sm cursor-pointer">EXPLORAR</button></Link>
                                 <button className="bg-white hover:bg-gray-300 transition-all justify-center w-50 items-center h-12 shadow-2xl shadow-black/40 rounded-sm cursor-pointer">OFERTAS</button>
                             </div>
                         </div>

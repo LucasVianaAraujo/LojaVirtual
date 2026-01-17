@@ -1,5 +1,6 @@
 import Subtitulo from "../Subtitulo"
 import CardAvaliacao from "../CardAvaliação";
+import { useState } from "react";
 
 export default function Avaliacoes({ NomeCliente, SeGostou, Avaliacão }) {
     return (
@@ -8,7 +9,6 @@ export default function Avaliacoes({ NomeCliente, SeGostou, Avaliacão }) {
                 <Subtitulo titulo={'Avaliações'} />
             </div>
             <div className="grid gap-5 grid-cols-2 w-[60%] justify-center h-auto">
-
 
                 <CardAvaliacao NomeCliente={'Gustavo Henrique'} Avaliacão={'Ótimo Produto!'} />
 
